@@ -1,0 +1,12 @@
+<div  class="productInfo">
+
+  <div class="productTitle" *ngFor= "let item of productList" [routerLink]="['/product-list/',item.id]">
+    <div   style="width: 100%;">
+      
+      <h1>{{item.name}}</h1> 
+    <div class="priceingInfo">
+      <p>{{item.price}}</p>  <span>{{item.rating}}</span>
+    </div>
+    </div>
+  </div>
+</div>

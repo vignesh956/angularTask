@@ -1,0 +1,18 @@
+.productInfo{
+    width: 100%; padding: 50px; 
+    display: flex;
+    justify-content: space-between;
+}
+.productTitle{
+    width: 200px;
+  height: auto;
+  padding: 30px 10px;
+  background-color: rgb(217, 247, 247);
+  border-radius: 23px;
+}
+.priceingInfo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
