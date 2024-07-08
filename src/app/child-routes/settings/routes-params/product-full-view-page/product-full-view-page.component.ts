@@ -43,16 +43,20 @@ export class ProductFullViewPageComponent  implements OnInit {
       description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
       rating : 4
     }
-  ];
-  filterProperty:any;
+  ]
+  filterProperty: any;
   constructor(public ac : ActivatedRoute) { 
-   const productId =  Number(this.ac.snapshot.paramMap.get('id'));
-   
+const productId = Number(this.ac.snapshot.paramMap.get('id'));
+console.log(typeof(productId))
 
-   this.filterProperty = this.productList.filter(product => product.id === productId)
-   console.log(this.filterProperty, 'productIdproductId')
+this.filterProperty = this.productList.filter(productObj => productObj.id == productId);
+console.log(this.filterProperty , 'filterProperty')
   }
 
   ngOnInit() {}
 
 }
+
+
+// snapshot  : paramsMap & queryParamMap
+//subscribe : params & queryParams

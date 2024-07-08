@@ -1,0 +1,16 @@
+<ion-content>
+  <ion-row>
+    <ion-col *ngFor="let item of productList" size="3">
+      <ion-card  style="width: 215px;">
+        <ion-card-header>
+          <ion-card-title>{{item.name}}</ion-card-title>
+          <ion-card-subtitle>{{item.category}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{item.price}}
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  </ion-content> 
