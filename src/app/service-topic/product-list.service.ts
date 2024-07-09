@@ -114,7 +114,6 @@ export class ProductListService {
     if(id){
       const productDetailsInfo = this.productList.filter((product:any) =>{
       return  product.id === id
-
       })
     }
   }

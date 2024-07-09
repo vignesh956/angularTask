@@ -21,10 +21,12 @@ import { Comp1Component } from './service-topic/comp1/comp1.component';
 import { Comp2Component } from './service-topic/comp2/comp2.component';
 import { Comp3Component } from './service-topic/comp3/comp3.component';
 import { Comp4Component } from './service-topic/comp4/comp4.component';
+import { ParentComponent } from './input-output-topic/parent/parent.component';
+import { ChildComponent } from './input-output-topic/child/child.component';
 
 @NgModule({
   declarations: [AppComponent , AboutComponent , HomeComponent , DashboardComponent,SettingsComponent ,ProductListComponent , ProductFullViewPageComponent,ProductInfoComponent,
-    SalesProductFullViewComponent , SalesProductListComponent , Comp1Component , Comp2Component ,Comp3Component ,Comp4Component
+    SalesProductFullViewComponent , SalesProductListComponent , Comp1Component , Comp2Component ,Comp3Component ,Comp4Component , ParentComponent ,ChildComponent
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule ,CommonModule , FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

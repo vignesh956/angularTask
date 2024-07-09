@@ -1,0 +1,18 @@
+<div>
+  <div style="width: 100%; display: flex; justify-content: center; padding: 30px 0;">
+    <ion-input type="text" placeholder="Something enter here" label="something" style="width: 200px;"  [(ngModel)]="somethingEnter">
+    </ion-input>
+    <br>
+  </div>
+  <div >
+    <ion-button expand="block" (click)="sendDataTochildC()">Block</ion-button> 
+  </div>
+  
+
+
+<h1>
+  Child Component Data in parent Component 
+</h1>
+<app-child [parentData]="sendDataToParent"></app-child>
+
+</div>
