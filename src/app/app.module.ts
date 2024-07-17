@@ -16,19 +16,20 @@ import { ProductFullViewPageComponent } from './child-routes/settings/routes-par
 import { SalesProductFullViewComponent } from './child-routes/settings/queryParams/sales-product-full-view/sales-product-full-view.component';
 import { SalesProductListComponent } from './child-routes/settings/queryParams/sales-product-list/sales-product-list.component';
 import { ProductInfoComponent } from './routes-query-params/product-info/product-info.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Comp1Component } from './service-topic/comp1/comp1.component';
 import { Comp2Component } from './service-topic/comp2/comp2.component';
 import { Comp3Component } from './service-topic/comp3/comp3.component';
 import { Comp4Component } from './service-topic/comp4/comp4.component';
 import { ParentComponent } from './input-output-topic/parent/parent.component';
 import { ChildComponent } from './input-output-topic/child/child.component';
+import { ReactivFormsComponent } from './forms/reactiv-forms/reactiv-forms.component';
 
 @NgModule({
   declarations: [AppComponent , AboutComponent , HomeComponent , DashboardComponent,SettingsComponent ,ProductListComponent , ProductFullViewPageComponent,ProductInfoComponent,
-    SalesProductFullViewComponent , SalesProductListComponent , Comp1Component , Comp2Component ,Comp3Component ,Comp4Component , ParentComponent ,ChildComponent
+    SalesProductFullViewComponent , ReactivFormsComponent , SalesProductListComponent , Comp1Component , Comp2Component ,Comp3Component ,Comp4Component , ParentComponent ,ChildComponent
   ],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule ,CommonModule , FormsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule ,CommonModule , FormsModule , ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   schemas : [CUSTOM_ELEMENTS_SCHEMA]

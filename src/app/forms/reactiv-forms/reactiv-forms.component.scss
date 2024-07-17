@@ -1,0 +1,164 @@
+.container {
+    --background: #00121B;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+// .navbar {
+//     &-icon {
+//         color: #FFFFFF;
+//         width: 30px;
+//         height: 60px;
+//     }
+
+//     &-logo {
+//         margin-left: 3%;
+//     }
+// }
+
+.signup-form {
+    &-title-block {
+        margin-bottom: 7%;
+
+        &-text {
+            font-size: 20px;
+            font-weight: 500;
+            margin-left: 5%;
+            color: #FFFFFF;
+        }
+    }
+
+    &-list {
+        margin: 4%;
+        background: #00121B;
+        align-items: center;
+
+        &-item {
+            gap: 8px;
+            border-radius: 5px;
+            border: 0.3px solid #838383;
+            margin-bottom: 5%;
+
+            &-icon-info {
+                margin-right: 3%;
+                width: 40px;
+                height: 24px;
+                color: #838383;
+            }
+        }
+    }
+
+    &-validation-error-message {
+        color: red;
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+
+    &-submit-button {
+        --background: var(--btn-color, #023047);
+        color: #FFFFFF;
+        height: 50px;
+        --border-radius: 11px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+.or-text {
+    text-align: center;
+    color: #838383;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 64%;
+}
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #838383;
+}
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+.info-card {
+    padding: 22px;
+    &-content {
+        font-size: 19px;
+        font-weight: bold;
+    }
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+.separator-info{
+    width: 100%; justify-content: center; display: flex ; padding: 15px 0;
+}
+.signup-with-social-account{
+    display: flex;
+    justify-content: space-evenly;
+// &-buttons{
+//     width: 137px;
+//     --border-radius: 26.5px;
+//     --background: #001A26;
+//     color: #737373;
+//     font-size: 12px;
+// }
+&-buttons{
+    border-radius: 4px;
+    --background	: #fff;
+    background-image: none;
+    border: 1px solid #dadce0;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: "Google Sans", arial, sans-serif;
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: 0.25px;
+    text-align: center;
+}
+}
+
+  
+    .custom-select {
+      --padding-start: 0;
+      position: relative;
+      border-radius: 20px;
+      margin: 5px 0;
+      background-color: rgb(46, 68, 84);
+      
+      &::part(icon) {
+        order: -1;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  
+    .countryCode {
+      text-align: center;
+    }
+  
+    .phoneNumber {
+      font-size: larger;
+    }
+  ion-select {
+    width: 100%;
+    justify-content: center;
+  }
+  ion-select::part(text) {
+    color: #545ca7;
+    padding: 10px;
+  }
+  ion-select::part(placeholder),
+  ion-select::part(text) {
+    flex: 0 0 auto;
+    padding: 10px;
+  }

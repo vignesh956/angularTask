@@ -1,0 +1,41 @@
+<div style=" padding-top: 40px;">
+  <!-- (ngSubmit)="onSubmit" -->
+  <form [formGroup]="signupForm"  >
+    <ion-item class="signup-form-list-item" style="width: 500px;">
+      <ion-input class="flex-center" type="text" placeholder="Username" formControlName="name">
+        <ion-icon name="person" class="signup-form-list-item-icon-info"></ion-icon>
+      </ion-input>
+    </ion-item>
+    <div  class="signup-form-validation-error-message" *ngIf="validationCheck['name'].invalid && (validationCheck['name'].dirty || validationCheck['name'].touched)">
+      <div *ngIf="validationCheck['name'].errors?.['required']">
+        username is required
+      </div>
+      <div *ngIf="validationCheck['name'].errors?.['minlength']">
+        username must be 3 char
+      </div>
+      <div *ngIf="validationCheck['name'].errors?.['maxlength']">
+        username mus be 10 char
+      </div>
+    </div>
+
+
+    <ion-item class="signup-form-list-item" style="width: 500px;">
+      <ion-input class="flex-center" type="text" placeholder="Email" formControlName="email">
+        <ion-icon name="mail-outline" class="signup-form-list-item-icon-info"></ion-icon>
+      </ion-input>
+    </ion-item>
+    <div *ngIf="validationCheck['email'].invalid && (validationCheck['email'].dirty || validationCheck['email'].touched)">
+      <div *ngIf="validationCheck['email'].errors?.['required']">
+        Email is required.
+      </div>
+      <div *ngIf="validationCheck['email'].errors?.['pattern']"> 
+        Give a Proper mail ID
+      </div>
+    </div>
+    <!-- <button type="submit" [disabled]="!signupForm.valid">Submit</button> -->
+    <button (click)="onSubmit()" [disabled]="!signupForm.valid">Submit</button>
+  </form>
+
+ 
+
+</div>

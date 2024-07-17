@@ -17,6 +17,7 @@ import { Comp2Component } from './service-topic/comp2/comp2.component';
 import { Comp3Component } from './service-topic/comp3/comp3.component';
 import { Comp4Component } from './service-topic/comp4/comp4.component';
 import { ParentComponent } from './input-output-topic/parent/parent.component';
+import { ReactivFormsComponent } from './forms/reactiv-forms/reactiv-forms.component';
 
 const routes: Routes = [
   {
@@ -92,6 +93,9 @@ const routes: Routes = [
   },
   {
     path :'parent' , component : ParentComponent
+  },
+  {
+    path :'react-forms' , component : ReactivFormsComponent
   },
   {  
     path: '',
